@@ -8,6 +8,8 @@ module VCAP::CloudController
     end
 
     get path,      :enumerate
+    get path_guid, :read
+
     query_parameters :name, :service_instance_guid
 
     def self.dependencies
